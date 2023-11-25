@@ -4,8 +4,9 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
+  --text-main: 244, 244, 244;
+  --secondary-color: #FB6E3B;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +19,41 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-rgb));
+  color: rgb(var(--text-main));
+}
+
+nav {
+  @apply w-full h-[80px] p-2;
+  border-bottom: 1px solid #3E3E3E;
+}
+
+.nav_elements {
+  @apply flex h-full max-w-4xl w-11/12 items-center justify-start m-auto;
+}
+
+.nav_content {
+  @apply flex items-center justify-between;
+}
+
+.nav_btn {
+  padding: 10px;
+  border-radius: 120px;
+  background: var(--secondary-color);
+}
+
+.hero_section {
+  background-image: url(/hero.svg), url(/cloud.svg);
+  background-size: 100%, 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.hero_text {
+  max-width: 45%;
+  text-align: center;
+}
+
+.hero_text-title {
+  line-height: 42px;
 }

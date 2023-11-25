@@ -29,11 +29,11 @@ nav {
 }
 
 .nav_elements {
-  @apply flex h-full max-w-4xl w-11/12 items-center justify-start m-auto;
+  @apply flex w-full h-full m-auto justify-between lg:max-w-4xl lg:w-11/12 items-center lg:justify-start ;
 }
 
 .nav_content {
-  @apply flex items-center justify-between;
+  @apply lg:items-center lg:justify-between;
 }
 
 .nav_btn {
@@ -56,4 +56,11 @@ nav {
 
 .hero_text-title {
   line-height: 42px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hero_text {
+    max-width: 100%;
+  }
 }

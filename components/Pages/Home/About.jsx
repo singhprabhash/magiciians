@@ -40,6 +40,7 @@ const About = () => {
           </div>
         </div>
 
+
         {/** second card */}
         <div className="card center">
           <div className="card_number-title  flex items-center justify-start">

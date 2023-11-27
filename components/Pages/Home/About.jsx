@@ -1,6 +1,6 @@
 import CodingPracticeSvg from "@components/components/SVGs/CodingPracticeSvg";
 import StarSvg from "@components/components/SVGs/StarSvg";
-import PriceSvg from "@components/components/SVGs/pricesvg";
+// import PriceSvg from "@components/components/SVGs/pricesvg";
 import Star from "@components/components/UI/Star";
 
 
@@ -20,7 +20,7 @@ const About = () => {
       <div className="flex stars-container justify-around items-center">
         <Star size="2xl" content="Best Coding practices" svg={<CodingPracticeSvg />} />
         <Star size="3xl" content="Experienced & high skill team" svg={<StarSvg />} />
-        <Star size="2xl" content="Affordable price" svg={<PriceSvg />} />
+        <Star size="2xl" content="Affordable price" svg={<StarSvg />} />
       </div>
 
       <div className="history flex flex-wrap gap-5 px-5 justify-between items-center">

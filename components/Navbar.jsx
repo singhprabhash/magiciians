@@ -30,7 +30,7 @@ const Navbar = () => {
             Blog
           </Link>
         </div>
-        <div className="nav_btn flex items-center justify-center w-[130px] cursor-pointer">
+        <div className="nav_btn flex items-center justify-center w-[130px] cursor-pointer ml-4">
           <svg
             className="mr-2"
             xmlns="http://www.w3.org/2000/svg"

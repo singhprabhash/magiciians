@@ -1,3 +1,6 @@
+import About from '@components/components/Pages/Home/About'
+import Intro from '@components/components/Pages/Home/Intro'
+import Services from '@components/components/Pages/Home/Services'
 import Image from 'next/image'
 
 export default function Home() {
@@ -21,6 +24,9 @@ export default function Home() {
           alt="The Magicians"
         />
       </div>
+      <Intro />
+      <Services />
+      <About />
     </main>
   )
 }

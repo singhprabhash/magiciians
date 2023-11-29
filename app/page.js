@@ -1,6 +1,9 @@
 import About from '@components/components/Pages/Home/About'
+import Contact from '@components/components/Pages/Home/Contact'
 import Intro from '@components/components/Pages/Home/Intro'
+import Portfolio from '@components/components/Pages/Home/Portfolio'
 import Services from '@components/components/Pages/Home/Services'
+import Updates from '@components/components/Pages/Home/Updates'
 import Image from 'next/image'
 
 export default function Home() {
@@ -27,6 +30,9 @@ export default function Home() {
       <Intro />
       <Services />
       <About />
+      <Portfolio />
+      <Updates />
+      <Contact />
     </main>
   )
 }

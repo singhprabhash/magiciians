@@ -7,7 +7,7 @@ import Star from "@components/components/UI/Star";
 
 const About = () => {
   return (
-    <div className="about-container h-screen">
+    <div className="about-container h-auto">
       <div className="intro_title">
         <h1 className="intro_title-heading">How We Different</h1>
         <h3 className="intro_title-subhead">From Others</h3>
@@ -23,10 +23,10 @@ const About = () => {
         <Star size="2xl" content="Affordable price" svg={<StarSvg />} />
       </div>
 
-      <div className="history flex flex-wrap gap-5 px-5 justify-between items-center">
-        <div className="first_card card">
+      <div className="history justify-between items-center w-full md:w-8/12 my-8 mx-auto">
+        <div className="first_card card w-full h-[300px]">
           <div className="card_number-title flex items-center justify-start">
-            <div className="card_number text-4xl font-bold">3+</div>
+            <div className="card_number font-bold">3+</div>
             <div className="card-title text-3xl ml-3 font-bold">
               Years
               <br />
@@ -36,63 +36,64 @@ const About = () => {
             </div>
           </div>
           <div className="desc mt-4">
-            <p className="text-sm">lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever </p>
+            <p className="text-sm md:text-base">lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever </p>
           </div>
         </div>
 
 
         {/** second card */}
-        <div className="card center">
+        <div className="card center h-[300px]">
           <div className="card_number-title  flex items-center justify-start">
-            <div className="card_number text-4xl font-bold">3+</div>
+            <div className="card_number font-bold">5+</div>
             <div className="card-title text-3xl ml-3 font-bold">
-              Years
+              Type of
               <br />
-              OF
+              Digital
               <br />
-              HISTORY
+              Services
             </div>
           </div>
           <div className="desc mt-4">
-            <p className="text-sm">lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever </p>
+            <p className="text-sm md:text-base">lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever </p>
           </div>
         </div>
         {/** third card */}
-        <div className="card right">
-          <div className="card_number-title  flex items-center justify-start">
-            <div className="card_number text-4xl font-bold">3+</div>
+        <div className="card right h-[300px]">
+          <div className="card_number-title  flex items-center justify-end">
+            <div className="card_number font-bold">25+</div>
             <div className="card-title text-3xl ml-3 font-bold">
-              Years
+              Happy
               <br />
-              OF
-              <br />
-              HISTORY
+              Clients
             </div>
           </div>
-          <div className="desc mt-4">
-            <p className="text-sm">lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever </p>
+          <div className="desc mt-4 ">
+            <p className="text-sm md:text-base">lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever </p>
           </div>
         </div>
+      </div>
+      <div className="history2 justify-between items-center w-full md:w-8/12 my-8 mx-auto">
         {/** fourth card */}
-        <div className="card left">
+        <div className="card left h-[250px]">
           <div className="card_number-title  flex items-center justify-start">
-            <div className="card_number text-4xl font-bold">3+</div>
+            <div className="card_number font-bold">40+</div>
             <div className="card-title text-3xl ml-3 font-bold">
-              Years
+              Projects
               <br />
-              OF
-              <br />
-              HISTORY
+              Delivered
             </div>
           </div>
           <div className="desc mt-4">
-            <p className="text-sm">lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever </p>
+            <p className="text-sm md:text-base">
+              lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+              lorem Ipsum is simply dummy text of the printing and typesetting
+            </p>
           </div>
         </div>
         {/** testimonial */}
         {/* <div className="testimonial">
           <div className="card_number-title  flex items-center justify-start">
-            <div className="card_number text-4xl font-bold">3+</div>
+            <div className="card_number font-bold">3+</div>
             <div className="card-title text-3xl ml-3 font-bold">
               Years
               <br />

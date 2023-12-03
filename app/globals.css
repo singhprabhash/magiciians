@@ -30,7 +30,7 @@ nav {
 }
 
 .nav_elements {
-  @apply flex w-full h-full m-auto justify-between lg:max-w-4xl lg:w-11/12 items-center lg:justify-start ;
+  @apply flex w-full h-full m-auto justify-between lg:max-w-4xl lg:w-11/12 items-center lg:justify-start;
 }
 
 .nav_content {
@@ -72,7 +72,7 @@ nav {
   @apply text-center text-base font-normal mt-3 mx-auto;
 }
 
-.intro_img  {
+.intro_img {
   margin: 2rem auto;
   /* width: 50%; */
 }
@@ -80,7 +80,7 @@ nav {
 
 .custom-img {
   object-fit: contain;
-  width: 100%!important;
+  width: 100% !important;
   position: relative;
 }
 
@@ -104,7 +104,7 @@ nav {
 .image-box img {
   width: 100%;
   filter: brightness(0.5);
-  position: relative!important;
+  position: relative !important;
 }
 
 .card-list {
@@ -177,6 +177,18 @@ nav {
   border-radius: 30px 210px 30px 30px;
   background: #FFF;
   color: #252525;
+}
+
+.consult_wrapper {
+  background: #000;
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 50px;
 }
 
 @media screen and (max-width: 768px) {

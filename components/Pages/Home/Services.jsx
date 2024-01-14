@@ -3,7 +3,7 @@
 import MobileDevSvg from "@components/components/SVGs/MobileDevSvg";
 import SeoSvg from "@components/components/SVGs/SeoSvg";
 import WebDevSvg from "@components/components/SVGs/WebDevSvg";
-import Card from "@components/components/UI/Card";
+import Card from "@components/components/UI/Cards/Card";
 import { useState, useRef, useEffect } from "react";
 
 const serviceData = [

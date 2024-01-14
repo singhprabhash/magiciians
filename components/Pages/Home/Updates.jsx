@@ -1,4 +1,4 @@
-import UpdatesCard from "@components/components/UI/UpdatesCard";
+import UpdatesCard from "@components/components/UI/Cards/UpdatesCard";
 
 export default function Updates() {
   return(

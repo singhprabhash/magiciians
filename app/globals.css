@@ -8,6 +8,8 @@
   --background-hex: #131313;
   --text-main: 244, 244, 244;
   --secondary-color: #FB6E3B;
+  --disabled: #606060;
+  --white-transparent: #ffffff24;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +24,30 @@ body {
   color: rgb(var(--foreground-rgb));
   background: var(--background-hex);
   color: rgb(var(--text-main));
+}
+
+h1{
+  @apply font-extrabold text-4xl;
+}
+
+h2{
+  @apply font-medium text-2xl;
+}
+
+h3{
+  @apply font-bold text-lg;
+}
+
+h4{
+  @apply font-bold text-base;
+}
+
+h5{
+  @apply font-bold text-sm;
+}
+
+h6{
+  @apply font-normal text-xs;
 }
 
 nav {
@@ -239,8 +265,94 @@ nav {
   filter: drop-shadow(2.121000051498413px 2.121000051498413px 6px rgba(3, 21, 50, 0.05));
 }
 
+.nav_tab {
+  @apply w-full md:max-w-3xl mx-auto bg-black rounded-3xl p-5 mt-5 text-center;
+}
+
+.nav_tab {
+  color: var(--disabled);
+}
+
+.nav_tab .active {
+  color: #fff;
+}
+
+.section_wrapper {
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+
+.section_container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 6fr);
+}
+
+.section_container .section_right {
+  display: grid;
+  gap: 5px;
+  justify-items: center;
+  grid-template-columns: repeat(3, 2fr);
+}
+
+
+.services_mini_card {
+  background-color: var(--white-transparent);
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tab-list {
+  overflow-x: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30rem;
+  background-color: #000;
+}
+
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.tab-content {
+  padding: 10px;
+}
+
+.process_card {
+  @apply flex justify-center md:justify-between gap-5 mt-10 md:w-10/12 md:mx-auto flex-wrap;
+  background-color: var(--secondary-color);
+  text-align: center;
+  border-radius: 150px;
+  text-wrap: balance;
+}
+
 @media screen and (max-width: 768px) {
   .hero_text {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section_container {
+    grid-template-columns: repeat(1, 12fr);
+  }
+
+  .section_container .section_right {
+    grid-template-columns: repeat(2, 6fr);
+  }
+
+  .tab-list {
+    padding: 10px;
   }
 }
